@@ -21,7 +21,7 @@ function SignIn() {
 
     const submitHandler = (e) => {
         e.preventDefault()
-        console.log('sending');
+        console.log('sendings');
         axios.post('http://localhost:4000/users', data).then((res) => {
             if (res.data === 'success') {
                 history('/Contacts')
